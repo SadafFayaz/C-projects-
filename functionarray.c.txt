@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void array(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);  // Print each element with space
+    }
+}
+
+int main() {
+    int n;
+    int arr[50];  // Declare array of size 50 (or you can ask user for size)
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("You entered:\n");
+    for (int i = 0; i < n; i++) {
+        printf("a%d is %d\n", i + 1, arr[i]);
+    }
+
+    printf("Printing from function:\n");
+    array(arr, n);
+
+    return 0;
+}

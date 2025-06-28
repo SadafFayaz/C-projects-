@@ -1,0 +1,12 @@
+#include <stdio.h>
+void faranhiet(int C){
+    float F;
+    F=(1.8)*C+32;
+    printf("%f",F);
+}
+int main() {
+int C;
+scanf("%d",&C);
+faranhiet(C);
+    return 0;
+}

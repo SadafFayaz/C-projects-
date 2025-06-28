@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<string.h>
+void chharacter (char a[])
+{
+int n=strlen(a);
+
+    for(int i=0;i<n;i++){
+    printf("%c\n",a[i]);}
+    
+}
+int main() {
+ char a[50] ="sadaf";
+ chharacter(a); 
+    return 0;
+}

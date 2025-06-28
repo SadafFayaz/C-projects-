@@ -1,0 +1,10 @@
+#include <stdio.h>
+void product(int a, int b){
+
+    printf("%d",a*b);
+}
+int main() {
+int a=5,b=10;
+product(a,b);
+    return 0;
+}
